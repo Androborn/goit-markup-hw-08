@@ -1,0 +1,35 @@
+.direction {
+  padding-bottom: 94px;
+
+  &-lable {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+
+  &-lable__text {
+    font-weight: var(--bold-font);
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+  }
+}
+
+.direction-list {
+  display: flex;
+  margin-right: -30px;
+
+  &__item {
+    position: relative;
+    margin-right: 30px;
+  }
+}

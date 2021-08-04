@@ -1,0 +1,24 @@
+.main-button {
+  padding: 10px 32px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: var(--bold-font);
+
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: var(--main-bg-color);
+  background-color: var(--accent-text-color);
+  border-style: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

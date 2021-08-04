@@ -1,0 +1,126 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  
+    background-color: var(--main-bg-color);
+
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
+  }
+  
+  .mobile-container-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 40px;
+
+    @media screen and (max-width: 479px) {
+      padding-left: 30px;
+    }
+  }
+  
+  .mobile-menu-list__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  
+  .mobile-menu-list__link {
+    font-weight: var(--middle-font);
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  
+    color: var(--title-text-color);
+
+    @media screen and (max-width: 479px) {
+      font-size: 36px;
+    }
+  }
+
+  .link-active{
+    color: var(--accent-text-color);
+  }
+  
+  .mobile-contacts-list__item:not(:last-child) {
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 479px) {
+      margin-bottom: 26px;
+    }
+  }
+  
+  .mobile-contacts-list:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  
+  .mobile-contacts-list__link-phone {
+    font-weight: var(--middle-font);
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  
+    color: var(--accent-text-color);
+
+    @media screen and (max-width: 479px) {
+      font-size: 24px;
+    }
+  }
+  
+  .mobile-contacts-list__link-mail {
+    font-weight: var(--middle-font);
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  
+    color: var(--main-text-color);
+  }
+  
+  .mobile-social-list {
+    display: flex;
+  }
+  
+  .mobile-social-list__item{
+    position: relative;
+  }
+
+  .mobile-social-list__item:not(:last-child) {
+    margin-right: 20px;
+
+    @media screen and (max-width: 479px) {
+      margin-right: 10px;
+    }
+  }
+  .mobile-social-list__item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -11px;
+    display: inline-block;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33,33,33,0.2);
+
+    @media screen and (max-width: 479px) {
+      right: -6px;
+    }
+  }
+
+  .mobile-social-list__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  
+    color: var(--accent-text-color);
+
+    @media screen and (max-width: 479px) {
+      font-size: 14px;
+    }
+  }
+  
