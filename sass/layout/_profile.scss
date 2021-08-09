@@ -2,7 +2,10 @@
 .profile {
   @include section-vert-padding(0);
   background-color: var(--white-color);
-  display: none;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .profile__list {
@@ -11,7 +14,7 @@
 
 .profile__item {
   position: relative;
-  flex-basis: calc(100% / 3 - var(--set-gap));
+  flex-basis: calc(100% / 3 - var(--set-gap) * 2);
 }
 
 .profile__sub-section-title {
