@@ -1,10 +1,4 @@
-body {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-}
-
+/* common styles */
 h1,
 h2,
 h3,
@@ -23,18 +17,31 @@ ol {
   padding-left: 0;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  color: var(--primary-text-color);
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .link {
   text-decoration: none;
 }
 
-img {
-  display: block;
-  min-width: 100%;
-  height: auto;
+.list {
+  list-style: none;
+}
+
+:focus {
+  outline: 2px solid black;
 }

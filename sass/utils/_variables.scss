@@ -1,16 +1,16 @@
 :root {
-  --main-bg-color: #ffffff;
-  --second-bg-color: #f5f4fa;
-  --accent-bg-color: #2f303a;
-  --main-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-text-color: #2196f3;
-  --hover-btn-color: #188ce8;
-  --main-icons-color: #afb1b8;
-  --contacts-text-color: rgba(255, 255, 255, 0.6);
-  --bold-font: 700;
-  --middle-font: 500;
-  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  --bottom-border: 1px solid #eeeeee;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --accent-color: #2196f3;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --hero-bg-color: #c4c4c4;
+  --primary-bg-color: #f5f4fa;
+  --secondary-bg-color: #2f303a;
+  --icon-fill-color: #afb1b8;
+  --primary-font: 'roboto', sans-serif;
+  --secondary-font: 'raleway', sans-serif;
+  --btn-subtitle-description-font-size: 16px;
+  --set-gap: 15px;
+  --basic-border-radius: 4px;
 }

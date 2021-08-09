@@ -1,0 +1,4 @@
+@mixin section-vert-padding($pt: 94px, $pb: 94px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}

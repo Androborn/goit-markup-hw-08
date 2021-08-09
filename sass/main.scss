@@ -1,30 +1,33 @@
-// UTILS
+/* UTILITIES */
 @import './utils/variables';
 @import './utils/visually-hidden';
-// BASE
+@import './utils/placeholders';
+@import './utils/mixins';
+
+/* BASE */
 @import './base/common';
 @import './base/container';
-// COMPONENTS
+
+/* COMPONENTS */
 @import './components/logo';
-@import './components/only-desktop';
 @import './components/section-title';
+@import './components/sub-section-title';
+@import './components/sub-section-description';
 @import './components/social-networks';
+@import './components/elements-set';
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
-@import './components/close-button';
-@import './components/modal-btn';
-@import './components/main-button';
-// LAYOUT
+@import './components/mobile-menu';
+@import './components/btn';
+@import './components/filter';
+
+/* LAYOUT */
 @import './layout/header';
-@import './layout/mobile-menu';
-@import './layout/main-section';
-@import './layout/qualities';
-@import './layout/direction';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/profile';
 @import './layout/team';
 @import './layout/clients';
-@import './layout/portfolio';
-@import './layout/products';
 @import './layout/footer';
-@import './layout/social';
-@import './layout/subscribe-form';
+@import './layout/portfolio';

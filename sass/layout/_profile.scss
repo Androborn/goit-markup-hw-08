@@ -1,0 +1,25 @@
+/* profile section */
+.profile {
+  @include section-vert-padding(0);
+  background-color: var(--white-color);
+  display: none;
+}
+
+.profile__list {
+  display: flex;
+}
+
+.profile__item {
+  position: relative;
+  flex-basis: calc(100% / 3 - var(--set-gap));
+}
+
+.profile__sub-section-title {
+  width: 100%;
+  padding: 27px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+}

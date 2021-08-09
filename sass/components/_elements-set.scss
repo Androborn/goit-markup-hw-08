@@ -1,0 +1,26 @@
+/* elements set */
+.set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--set-gap));
+}
+
+.set__element {
+  margin: var(--set-gap);
+}
+
+.set--2-column {
+  flex-basis: calc(100% / 2 - var(--set-gap));
+}
+
+.set--3-column {
+  flex-basis: calc(100% / 3 - var(--set-gap));
+}
+
+.set--4-column {
+  flex-basis: calc(100% / 4 - var(--set-gap));
+}
+
+.set--6-column {
+  flex-basis: calc(100% / 6 - var(--set-gap));
+}
