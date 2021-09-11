@@ -1,0 +1,8 @@
+.section {
+  @include section-vert-padding();
+  background-color: var(--white-color);
+
+  @media screen and (min-width: 1200px) {
+    @include section-vert-padding(94px, 94px);
+  }
+}

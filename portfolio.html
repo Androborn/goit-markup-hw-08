@@ -22,6 +22,9 @@
   <body>
     <header class="header">
       <div class="container container--flex">
+        <h2 class="section-title header__section-title visually-hidden">
+          Шапка страницы
+        </h2>
         <nav class="nav">
           <a class="logo header__logo link" href="./index.html" lang="en"
             >Web<span class="logo__span logo__span--dark">Studio</span></a
@@ -75,10 +78,12 @@
     </header>
     <main>
       <!-- PORTFOLIO -->
-      <section class="portfolio">
+      <section class="section portfolio__section">
         <div class="container">
-          <!--h1 for this section is hidden via css-->
-          <h1 class="portfolio__title visually-hidden">Портфолио</h1>
+          <h1 class="portfolio__page-title visually-hidden">Наши работы</h1>
+          <h2 class="section-title portfolio__section-title visually-hidden">
+            Портфолио
+          </h2>
           <ul class="filter portfolio__filter list">
             <li class="filter__item">
               <button class="filter__btn" type="button">Все</button>
@@ -96,705 +101,745 @@
               <button class="filter__btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <div class="works">
-            <ul class="set portfolio__set list">
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio1-dt.webp    1x,
-                          ./images/portfolio/portfolio1-dt@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio1-dt.jpg    1x,
-                          ./images/portfolio/portfolio1-dt@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio1-tb.webp    1x,
-                          ./images/portfolio/portfolio1-tb@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio1-tb.jpg    1x,
-                          ./images/portfolio/portfolio1-tb@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio1-mb.webp    1x,
-                          ./images/portfolio/portfolio1-mb@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio1-mb.jpg    1x,
-                          ./images/portfolio/portfolio1-mb@2x.jpg 2x
-                        "
-                      />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio1-mb.jpg"
-                        alt="Страница сайта Технокряк"
-                      />
-                    </picture>
-                    <p class="portfolio__overlay">
-                      Технокряк это современная площадка распространения
-                      коронавируса. Компании используют эту платформу для
-                      цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.
-                    </p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle">Технокряк</h2>
-                    <p class="portfolio__description">Веб-сайт</p>
-                  </div>
-                </a>
-              </li>
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio2-dt.webp    1x,
-                          ./images/portfolio/portfolio2-dt@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio2-dt.jpg    1x,
-                          ./images/portfolio/portfolio2-dt@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio2-tb.webp    1x,
-                          ./images/portfolio/portfolio2-tb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio2-tb.jpg    1x,
-                          ./images/portfolio/portfolio2-tb@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio2-mb.webp    1x,
-                          ./images/portfolio/portfolio2-mb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio2-mb.jpg    1x,
-                          ./images/portfolio/portfolio2-mb@2x.jpg 2x
-                        " />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio2-mb.jpg"
-                        alt="Страница сайта New Orlean vs Golden Star"
-                    /></picture>
-                    <p class="portfolio__overlay"></p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle">
-                      Постер
-                      <span lang="en">New Orlean vs Golden Star</span>
-                    </h2>
-                    <p class="portfolio__description">Дизайн</p>
-                  </div>
-                </a>
-              </li>
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio3-dt.webp    1x,
-                          ./images/portfolio/portfolio3-dt@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio3-dt.jpg    1x,
-                          ./images/portfolio/portfolio3-dt@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio3-tb.webp    1x,
-                          ./images/portfolio/portfolio3-tb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio3-tb.jpg    1x,
-                          ./images/portfolio/portfolio3-tb@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio3-mb.webp    1x,
-                          ./images/portfolio/portfolio3-mb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio3-mb.jpg    1x,
-                          ./images/portfolio/portfolio3-mb@2x.jpg 2x
-                        " />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio3-mb.jpg"
-                        alt="Перейти на сайт Seafood"
-                    /></picture>
-                    <p class="portfolio__overlay"></p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle">
-                      Ресторан <span lang="en">Seafood</span>
-                    </h2>
-                    <p class="portfolio__description">Приложение</p>
-                  </div>
-                </a>
-              </li>
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio4-dt.webp    1x,
-                          ./images/portfolio/portfolio4-dt@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio4-dt.jpg    1x,
-                          ./images/portfolio/portfolio4-dt@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio4-tb.webp    1x,
-                          ./images/portfolio/portfolio4-tb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio4-tb.jpg    1x,
-                          ./images/portfolio/portfolio4-tb@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio4-mb.webp    1x,
-                          ./images/portfolio/portfolio4-mb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio4-mb.jpg    1x,
-                          ./images/portfolio/portfolio4-mb@2x.jpg 2x
-                        " />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio4-mb.jpg"
-                        alt="Перейти на сайт Prime"
-                    /></picture>
-                    <p class="portfolio__overlay"></p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle">
-                      Проект <span lang="en">Prime</span>
-                    </h2>
-                    <p class="portfolio__description">Маркетинг</p>
-                  </div>
-                </a>
-              </li>
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio5-dt.webp    1x,
-                          ./images/portfolio/portfolio5-dt@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio5-dt.jpg    1x,
-                          ./images/portfolio/portfolio5-dt@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio5-tb.webp    1x,
-                          ./images/portfolio/portfolio5-tb@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio5-tb.jpg    1x,
-                          ./images/portfolio/portfolio5-tb@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio5-mb.webp    1x,
-                          ./images/portfolio/portfolio5-mb@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio5-mb.jpg    1x,
-                          ./images/portfolio/portfolio5-mb@2x.jpg 2x
-                        "
-                      />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio5-mb.jpg"
-                        alt="Проект Boxes"
-                      />
-                    </picture>
-                    <p class="portfolio__overlay"></p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle">
-                      Проект <span lang="en">Boxes</span>
-                    </h2>
-                    <p class="portfolio__description">Приложение</p>
-                  </div>
-                </a>
-              </li>
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio6-dt.webp    1x,
-                          ./images/portfolio/portfolio6-dt@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio6-dt.jpg    1x,
-                          ./images/portfolio/portfolio6-dt@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio6-tb.webp    1x,
-                          ./images/portfolio/portfolio6-tb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio6-tb.jpg    1x,
-                          ./images/portfolio/portfolio6-tb@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio6-mb.webp    1x,
-                          ./images/portfolio/portfolio6-mb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio6-mb.jpg    1x,
-                          ./images/portfolio/portfolio6-mb@2x.jpg 2x
-                        " />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio6-mb.jpg"
-                        alt="Черный монитор з открытой страницей сайта"
-                    /></picture>
-                    <p class="portfolio__overlay"></p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle" lang="en">
-                      Inspiration has no Borders
-                    </h2>
-                    <p class="portfolio__description">Веб-сайт</p>
-                  </div>
-                </a>
-              </li>
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio7-dt.webp    1x,
-                          ./images/portfolio/portfolio7-dt@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio7-dt.jpg    1x,
-                          ./images/portfolio/portfolio7-dt@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio7-tb.webp    1x,
-                          ./images/portfolio/portfolio7-tb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio7-tb.jpg    1x,
-                          ./images/portfolio/portfolio7-tb@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio7-mb.webp    1x,
-                          ./images/portfolio/portfolio7-mb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio7-mb.jpg    1x,
-                          ./images/portfolio/portfolio7-mb@2x.jpg 2x
-                        " />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio7-mb.jpg"
-                        alt="Издание Limited Edition"
-                    /></picture>
-                    <p class="portfolio__overlay"></p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle">
-                      Издание <span lang="en">Limited Edition</span>
-                    </h2>
-                    <p class="portfolio__description">Дизайн</p>
-                  </div>
-                </a>
-              </li>
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio8-dt.webp    1x,
-                          ./images/portfolio/portfolio8-dt@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio8-dt.jpg    1x,
-                          ./images/portfolio/portfolio8-dt@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio8-tb.webp    1x,
-                          ./images/portfolio/portfolio8-tb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio8-tb.jpg    1x,
-                          ./images/portfolio/portfolio8-tb@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio8-mb.webp    1x,
-                          ./images/portfolio/portfolio8-mb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio8-mb.jpg    1x,
-                          ./images/portfolio/portfolio8-mb@2x.jpg 2x
-                        " />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio8-mb.jpg"
-                        alt="Проект LAB"
-                    /></picture>
-                    <p class="portfolio__overlay"></p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle">
-                      Проект <span lang="en">LAB</span>
-                    </h2>
-                    <p class="portfolio__description">Маркетинг</p>
-                  </div>
-                </a>
-              </li>
-              <li class="portfolio__item set__element">
-                <a
-                  class="portfolio__link link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div class="portfolio__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio9-dt.webp    1x,
-                          ./images/portfolio/portfolio9-dt@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/portfolio/portfolio9-dt.jpg    1x,
-                          ./images/portfolio/portfolio9-dt@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio9-tb.webp    1x,
-                          ./images/portfolio/portfolio9-tb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 768px)"
-                        srcset="
-                          ./images/portfolio/portfolio9-tb.jpg    1x,
-                          ./images/portfolio/portfolio9-tb@2x.jpg 2x
-                        " />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio9-mb.webp    1x,
-                          ./images/portfolio/portfolio9-mb@2x.webp 2x
-                        "
-                        type="image/webp" />
-                      <source
-                        media="(min-width: 320px)"
-                        srcset="
-                          ./images/portfolio/portfolio9-mb.jpg    1x,
-                          ./images/portfolio/portfolio9-mb@2x.jpg 2x
-                        " />
-                      <img
-                        class="products__img"
-                        src="./images/portfolio/portfolio9-mb.jpg"
-                        alt="Перейти на сайт Growing Business"
-                    /></picture>
-                    <p class="portfolio__overlay"></p>
-                  </div>
-                  <div class="portfolio__info">
-                    <h2 class="portfolio__subtitle" lang="en">
-                      Growing Business
-                    </h2>
-                    <p class="portfolio__description">Приложение</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="card-set list">
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio1-dt.webp    1x,
+                        ./images/portfolio/portfolio1-dt@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio1-dt.jpg    1x,
+                        ./images/portfolio/portfolio1-dt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio1-tb.webp    1x,
+                        ./images/portfolio/portfolio1-tb@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio1-tb.jpg    1x,
+                        ./images/portfolio/portfolio1-tb@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio1-mb.webp    1x,
+                        ./images/portfolio/portfolio1-mb@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio1-mb.jpg    1x,
+                        ./images/portfolio/portfolio1-mb@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio1-mb.jpg"
+                      alt="Страница сайта Технокряк"
+                    />
+                  </picture>
+                  <p class="card__overlay card__overlay--portfolio">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio">Технокряк</h3>
+                  <p class="card__description card__description--portfolio">
+                    Веб-сайт
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio2-dt.webp    1x,
+                        ./images/portfolio/portfolio2-dt@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio2-dt.jpg    1x,
+                        ./images/portfolio/portfolio2-dt@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio2-tb.webp    1x,
+                        ./images/portfolio/portfolio2-tb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio2-tb.jpg    1x,
+                        ./images/portfolio/portfolio2-tb@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio2-mb.webp    1x,
+                        ./images/portfolio/portfolio2-mb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio2-mb.jpg    1x,
+                        ./images/portfolio/portfolio2-mb@2x.jpg 2x
+                      " />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio2-mb.jpg"
+                      alt="Страница сайта New Orlean vs Golden Star"
+                  /></picture>
+                  <p class="card__overlay card__overlay--portfolio"></p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio">
+                    Постер
+                    <span lang="en">New Orlean vs Golden Star</span>
+                  </h3>
+                  <p class="card__description card__description--portfolio">
+                    Дизайн
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio3-dt.webp    1x,
+                        ./images/portfolio/portfolio3-dt@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio3-dt.jpg    1x,
+                        ./images/portfolio/portfolio3-dt@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio3-tb.webp    1x,
+                        ./images/portfolio/portfolio3-tb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio3-tb.jpg    1x,
+                        ./images/portfolio/portfolio3-tb@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio3-mb.webp    1x,
+                        ./images/portfolio/portfolio3-mb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio3-mb.jpg    1x,
+                        ./images/portfolio/portfolio3-mb@2x.jpg 2x
+                      " />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio3-mb.jpg"
+                      alt="Перейти на сайт Seafood"
+                  /></picture>
+                  <p class="card__overlay card__overlay--portfolio"></p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h3>
+                  <p class="card__description card__description--portfolio">
+                    Приложение
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio4-dt.webp    1x,
+                        ./images/portfolio/portfolio4-dt@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio4-dt.jpg    1x,
+                        ./images/portfolio/portfolio4-dt@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio4-tb.webp    1x,
+                        ./images/portfolio/portfolio4-tb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio4-tb.jpg    1x,
+                        ./images/portfolio/portfolio4-tb@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio4-mb.webp    1x,
+                        ./images/portfolio/portfolio4-mb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio4-mb.jpg    1x,
+                        ./images/portfolio/portfolio4-mb@2x.jpg 2x
+                      " />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio4-mb.jpg"
+                      alt="Перейти на сайт Prime"
+                  /></picture>
+                  <p class="card__overlay card__overlay--portfolio"></p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio">
+                    Проект <span lang="en">Prime</span>
+                  </h3>
+                  <p class="card__description card__description--portfolio">
+                    Маркетинг
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio5-dt.webp    1x,
+                        ./images/portfolio/portfolio5-dt@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio5-dt.jpg    1x,
+                        ./images/portfolio/portfolio5-dt@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio5-tb.webp    1x,
+                        ./images/portfolio/portfolio5-tb@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio5-tb.jpg    1x,
+                        ./images/portfolio/portfolio5-tb@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio5-mb.webp    1x,
+                        ./images/portfolio/portfolio5-mb@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio5-mb.jpg    1x,
+                        ./images/portfolio/portfolio5-mb@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio5-mb.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
+                  <p class="card__overlay card__overlay--portfolio"></p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio">
+                    Проект <span lang="en">Boxes</span>
+                  </h3>
+                  <p class="card__description card__description--portfolio">
+                    Приложение
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio6-dt.webp    1x,
+                        ./images/portfolio/portfolio6-dt@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio6-dt.jpg    1x,
+                        ./images/portfolio/portfolio6-dt@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio6-tb.webp    1x,
+                        ./images/portfolio/portfolio6-tb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio6-tb.jpg    1x,
+                        ./images/portfolio/portfolio6-tb@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio6-mb.webp    1x,
+                        ./images/portfolio/portfolio6-mb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio6-mb.jpg    1x,
+                        ./images/portfolio/portfolio6-mb@2x.jpg 2x
+                      " />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio6-mb.jpg"
+                      alt="Черный монитор з открытой страницей сайта"
+                  /></picture>
+                  <p class="card__overlay card__overlay--portfolio"></p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio" lang="en">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="card__description card__description--portfolio">
+                    Веб-сайт
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio7-dt.webp    1x,
+                        ./images/portfolio/portfolio7-dt@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio7-dt.jpg    1x,
+                        ./images/portfolio/portfolio7-dt@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio7-tb.webp    1x,
+                        ./images/portfolio/portfolio7-tb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio7-tb.jpg    1x,
+                        ./images/portfolio/portfolio7-tb@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio7-mb.webp    1x,
+                        ./images/portfolio/portfolio7-mb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio7-mb.jpg    1x,
+                        ./images/portfolio/portfolio7-mb@2x.jpg 2x
+                      " />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio7-mb.jpg"
+                      alt="Издание Limited Edition"
+                  /></picture>
+                  <p class="card__overlay card__overlay--portfolio"></p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h3>
+                  <p class="card__description card__description--portfolio">
+                    Дизайн
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio8-dt.webp    1x,
+                        ./images/portfolio/portfolio8-dt@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio8-dt.jpg    1x,
+                        ./images/portfolio/portfolio8-dt@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio8-tb.webp    1x,
+                        ./images/portfolio/portfolio8-tb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio8-tb.jpg    1x,
+                        ./images/portfolio/portfolio8-tb@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio8-mb.webp    1x,
+                        ./images/portfolio/portfolio8-mb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio8-mb.jpg    1x,
+                        ./images/portfolio/portfolio8-mb@2x.jpg 2x
+                      " />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio8-mb.jpg"
+                      alt="Проект LAB"
+                  /></picture>
+                  <p class="card__overlay card__overlay--portfolio"></p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio">
+                    Проект <span lang="en">LAB</span>
+                  </h3>
+                  <p class="card__description card__description--portfolio">
+                    Маркетинг
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="card card--portfolio">
+              <a
+                class="card__link card__link--portfolio link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card__thumb card__thumb--portfolio">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio9-dt.webp    1x,
+                        ./images/portfolio/portfolio9-dt@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio9-dt.jpg    1x,
+                        ./images/portfolio/portfolio9-dt@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio9-tb.webp    1x,
+                        ./images/portfolio/portfolio9-tb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio9-tb.jpg    1x,
+                        ./images/portfolio/portfolio9-tb@2x.jpg 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/webp"
+                      srcset="
+                        ./images/portfolio/portfolio9-mb.webp    1x,
+                        ./images/portfolio/portfolio9-mb@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 320px)"
+                      type="image/jpg"
+                      srcset="
+                        ./images/portfolio/portfolio9-mb.jpg    1x,
+                        ./images/portfolio/portfolio9-mb@2x.jpg 2x
+                      " />
+                    <img
+                      class="products__img"
+                      src="./images/portfolio/portfolio9-mb.jpg"
+                      alt="Перейти на сайт Growing Business"
+                  /></picture>
+                  <p class="card__overlay card__overlay--portfolio"></p>
+                </div>
+                <div class="card__info card__info--portfolio">
+                  <h3 class="card__title card__title--portfolio" lang="en">
+                    Growing Business
+                  </h3>
+                  <p class="card__description card__description--portfolio">
+                    Приложение
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container footer__container container--flex">
-        <h2 class="section-title footer__section-title visually-hidden">
+        <h3 class="section-title footer__section-title visually-hidden">
           Подвал
-        </h2>
-        <div class="footer__wrapper footer__wrapper--tablet">
-          <div class="footer__nav">
-            <a class="logo footer__logo link" href="./index.html" lang="en"
-              >Web<span class="logo__span logo__span--light">Studio</span>
-            </a>
-            <address class="address">
-              <ul class="address__list list">
-                <li class="address__item">
-                  <a
-                    class="address__link address__link--bright link"
-                    href="https://goo.gl/maps/WBp1z51C1kAFo6pN6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >г. Киев, пр-т Леси Украинки, 26
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a
-                    class="address__link address__link--dimmed link"
-                    href="mailto:info@devstudio.com"
-                    >info@example.com
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a
-                    class="address__link address__link--dimmed link"
-                    href="tel:00380961111111"
-                    >+38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="join-us">
-            <h3
-              class="
-                sub-section-title
-                join-us__sub-section-title
-                sub-section-title--light
-              "
-            >
-              Присоединяйтесь
-            </h3>
-            <ul class="socials__list list">
-              <li class="socials__item">
+        </h3>
+        <div class="footer__nav">
+          <a class="logo footer__logo link" href="./index.html" lang="en"
+            >Web<span class="logo__span logo__span--light">Studio</span>
+          </a>
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
                 <a
-                  class="socials__link socials__link--light"
-                  aria-label="Ссылка на Instagram"
-                  href="#"
+                  class="address__link address__link--bright link"
+                  href="https://goo.gl/maps/WBp1z51C1kAFo6pN6"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  <span class="visually-hidden">Переход в соцсеть</span>
-                  <svg class="socials__icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
+                  >г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="socials__item">
+              <li class="address__item">
                 <a
-                  class="socials__link socials__link--light"
-                  aria-label="Ссылка на Twitter"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="visually-hidden">Переход в соцсеть</span>
-                  <svg class="socials__icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
+                  class="address__link address__link--dimmed link"
+                  href="mailto:info@devstudio.com"
+                  >info@example.com
                 </a>
               </li>
-              <li class="socials__item">
+              <li class="address__item">
                 <a
-                  class="socials__link socials__link--light"
-                  aria-label="Ссылка на Facebook"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="visually-hidden">Переход в соцсеть</span>
-                  <svg class="socials__icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a
-                  class="socials__link socials__link--light"
-                  aria-label="Ссылка на LinkedIn"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="visually-hidden">Переход в соцсеть</span>
-                  <svg class="socials__icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
+                  class="address__link address__link--dimmed link"
+                  href="tel:00380961111111"
+                  >+38 096 111 11 11
                 </a>
               </li>
             </ul>
-          </div>
+          </address>
+        </div>
+        <div class="join-us">
+          <h3
+            class="
+              sub-section-title
+              join-us__sub-section-title
+              sub-section-title--light
+            "
+          >
+            Присоединяйтесь
+          </h3>
+          <ul class="socials__list list">
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--light"
+                aria-label="Ссылка на Instagram"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="visually-hidden">Переход в соцсеть</span>
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--light"
+                aria-label="Ссылка на Twitter"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="visually-hidden">Переход в соцсеть</span>
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--light"
+                aria-label="Ссылка на Facebook"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="visually-hidden">Переход в соцсеть</span>
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__link socials__link--light"
+                aria-label="Ссылка на LinkedIn"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="visually-hidden">Переход в соцсеть</span>
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="subscribe">
           <h3

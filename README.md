@@ -53,3 +53,5 @@ min-device-pixel-ratio и min-resolution.
 «C4» Вёрстка выполнена относительно трёх точек перелома: 480px, 768px и 1200px.
 
 «C5» Выполнено оформление мобильного меню.
+
+Link to github pages https://androborn.github.io/goit-markup-hw-08/

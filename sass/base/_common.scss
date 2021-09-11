@@ -31,6 +31,9 @@ body {
 
   &.modal-open {
     overflow: hidden;
+    @media screen and (min-width: 1200px) {
+      margin-right: 17px;
+    }
   }
 }
 
@@ -40,8 +43,4 @@ body {
 
 .list {
   list-style: none;
-}
-
-:focus {
-  outline: 2px solid black;
 }

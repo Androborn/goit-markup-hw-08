@@ -1,4 +1,23 @@
-@mixin section-vert-padding($pt: 94px, $pb: 94px) {
+@mixin section-vert-padding($pt: 60px, $pb: 60px) {
   padding-top: $pt;
   padding-bottom: $pb;
+}
+
+@mixin retina-bg-img($file, $type) {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url($file + '.' + $type);
+  @media #{$retina-img} {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url($file + '@2x.' + $type);
+  }
+}
+
+@mixin set-columns-basis($cn: 1) {
+  flex-basis: calc(100% / #{$cn} - 2 * var(--set-gap));
 }

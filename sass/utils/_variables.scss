@@ -2,15 +2,44 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --accent-color: #2196f3;
+
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
+
   --hero-bg-color: #c4c4c4;
   --primary-bg-color: #f5f4fa;
   --secondary-bg-color: #2f303a;
+
   --icon-fill-color: #afb1b8;
+
   --primary-font: 'roboto', sans-serif;
   --secondary-font: 'raleway', sans-serif;
+
+  --regular-font: 500;
+  --bold-font: 700;
+
   --btn-subtitle-description-font-size: 16px;
+
   --set-gap: 15px;
+
   --basic-border-radius: 4px;
 }
+
+$retina-img: screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and
+    (
+      min--moz-device-pixel-ratio: 2,
+    ),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and
+    (
+      min-device-pixel-ratio: 2,
+    ),
+  screen and
+    (
+      min-resolution: 192dpi,
+    ),
+  screen and
+    (
+      min-resolution: 2dppx,
+    );

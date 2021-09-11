@@ -1,25 +1,19 @@
 /* footer section */
 .footer {
-  @include section-vert-padding(60px, 60px);
+  @include section-vert-padding();
   background-color: var(--secondary-bg-color);
 }
 
 .footer__container {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     display: block;
-    text-align: center;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 76px;
     padding-right: 89px;
-  }
-}
-
-.footer__wrapper--tablet {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -29,24 +23,26 @@
 }
 
 .footer__nav {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
 
 .address {
+  font-style: normal;
+  line-height: 1.71;
+
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
-  font-style: normal;
-  line-height: 1.71;
 }
 
 .address__item {
-  margin-bottom: 8px;
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 9px;
-  }
+  margin-bottom: 9px;
 }
 
 .address__link {
@@ -70,17 +66,31 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-}
 
-.join-us {
   @media screen and (min-width: 768px) {
     padding-top: 5px;
   }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
 }
 
-.join-us,
 .subscribe {
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
   @media screen and (min-width: 1200px) {
+    margin: 0 0 0 auto;
     padding-top: 12px;
   }
 }
@@ -90,25 +100,18 @@
   margin-bottom: 20px;
 }
 
-.subscribe {
-  margin-left: auto;
-}
-
 .subscribe__form {
   display: block;
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 .subscribe__input {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 450px;
-  }
-
   margin-right: 12px;
+  width: 100%;
+  max-width: 450px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -118,6 +121,14 @@
   border-radius: 4px;
   background-color: transparent;
   color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 358px;
